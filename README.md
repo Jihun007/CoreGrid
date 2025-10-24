@@ -15,7 +15,7 @@
 
 ### Basic Usage
 
-html
+```html
 const grid = new GridCore({
     selector: 'myGrid',
     url: '/api/data',
@@ -28,7 +28,7 @@ const grid = new GridCore({
     debug: true
 });
 </script>
-
+```
 
 ## 📖 Configuration Options
 
@@ -57,7 +57,7 @@ javascript
 
 ## 💡 Server Response Format
 
-\```json
+```json
 {
     "result": "success",
     "totalCount": 100,
@@ -66,7 +66,7 @@ javascript
         {"year": "2024", "project": "Sample B"}
     ]
 }
-\```
+```
 
 ## 🎨 Dependencies
 
