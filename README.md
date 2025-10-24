@@ -45,7 +45,7 @@ const grid = new GridCore({
 
 ## 🛠️ Column Options
 
-javascript
+```javascript
 {
     label: 'Column Title',     // Required
     field: 'dataFieldName',    // Required
@@ -53,7 +53,7 @@ javascript
     align: 'tc',               // Optional: 'tl', 'tc', 'tr'
     width: '100px'             // Optional: default 'auto'
 }
-
+```
 
 ## 💡 Server Response Format
 
