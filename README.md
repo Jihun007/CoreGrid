@@ -15,7 +15,7 @@
 
 ### Basic Usage
 
-\```html
+html
 const grid = new GridCore({
     selector: 'myGrid',
     url: '/api/data',
@@ -28,7 +28,7 @@ const grid = new GridCore({
     debug: true
 });
 </script>
-\```
+
 
 ## 📖 Configuration Options
 
@@ -45,7 +45,7 @@ const grid = new GridCore({
 
 ## 🛠️ Column Options
 
-\```javascript
+javascript
 {
     label: 'Column Title',     // Required
     field: 'dataFieldName',    // Required
@@ -53,7 +53,7 @@ const grid = new GridCore({
     align: 'tc',               // Optional: 'tl', 'tc', 'tr'
     width: '100px'             // Optional: default 'auto'
 }
-\```
+
 
 ## 💡 Server Response Format
 
