@@ -1,0 +1,166 @@
+@charset "utf-8";
+
+body,p,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,th,td,form,fieldset,legend,input,textarea,button,select,nav,menu{font-family: "pretendard", sans-serif;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none}
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,p,blockquote,th,td{margin:0;padding:0;}
+html, body {height: 100%;font-size:10px;box-sizing: border-box;}
+body{margin:0;padding:0;color:#000;background:#fff;overflow-x:hidden;}
+fieldset,img{border:0 none;vertical-align:middle; }
+
+.container{width: 100%; height: 100%; padding-top: 23px; padding-bottom: 100px; position: relative;}
+.content_ai{display: flex; position: relative; width: 1340px; margin: 0 auto;}
+.cnt_box{width: 100%; position: relative; padding: 30px 0;}
+table{border-collapse:collapse;border-spacing:0;width:100%;table-layout:fixed}
+* {box-sizing: border-box;}
+dl,ul,ol,menu,li{list-style:none; list-style-type:none; }
+
+.detail_tit{
+	font-size: 18px;
+	color: #222222;
+	position: relative;
+	padding-left: 33px;
+	width:100%;
+	margin-bottom: 15px;
+}
+.detail_tit::before {
+    content: "●";
+    position: absolute;
+    top: -2px;
+    left: 0;
+    font-size: 20px;  /* 크기 조절 */
+    color: #222;      /* 색상 조절 */
+}
+
+.search-number{
+	font-size: 16px;
+    color: #111;
+    font-weight: 500;
+}
+
+.table-wrapper {
+  background: #fff;
+  overflow-x: auto;
+  margin-bottom: 30px;
+}
+.table-wrapper table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.table-wrapper th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: center;
+}
+.table-wrapper th {
+  background: #f2f2f2;
+  font-size: 15px;
+  color: #000;
+  font-weight: 600;
+  padding: 15px;
+}
+
+
+  .table-wrapper td {
+
+	font-size: 14px;
+}
+
+.button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 4px;
+    width: auto;
+    font-weight: 400;
+    line-height: 1;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: 0.4s ease-in-out;
+}
+  
+.button.md {
+    height: 32px;
+    padding: 0 24px;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.button.grey {
+    background-color: #717171;
+    border: 1px solid #717171;
+    color: #fff;
+}
+
+.button.white {
+    background-color: #fff;
+    border: 1px solid #1d1d1d;
+    color: #000b17;
+}
+
+.tit-way{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 15px;
+}
+
+thead {
+    display: table-header-group;
+    vertical-align: middle;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+
+a{color: inherit;text-decoration:none;background:transparent;}
+a:focus,a:active,a:hover{text-decoration:none}
+
+.pagination_area {display: flex;justify-content: center;margin:2rem 0rem;align-items: center;}
+.pagination_area a {position: relative;padding: 1rem 2rem;font-size:1.6rem;}
+.pagination_area a span {z-index: 99; position: relative;}
+.pagination_area a:hover {color: #8b4a4a;text-decoration: underline;text-underline-offset: 10px;}
+.pagin_on {color: #fff;}
+.pagin_on:hover {color: #fff !important;}
+.pagination_area .pagin_on:after {content: ""; position: absolute; background: #2b2b2b; width: 3rem; height: 3rem; border-radius: 10rem; top:50%; left:50%; transform: translate(-50%,-50%);}
+.prev_page:before {content: "\e93b"; font-family:"xeicon"; 
+/* 					vertical-align: top;  */
+					margin-right:0.5rem;}
+.next_page:before {content: "\e93e";font-family:"xeicon";
+/* 					vertical-align: top; */
+					margin-right:0.5rem;}
+.first_page:before {content:"\e93b\e93b"; 
+					font-family:"xeicon"; 
+/* 					vertical-align: top;  */
+					margin-right:0.5rem;}
+.last_page:before {content: "\e93e\e93e";font-family:"xeicon";
+/* 					vertical-align: top; */
+					margin-right:0.5rem;}
+
+select {
+    width: 100%;
+    padding: 0.7rem;
+    font-size: 1.4rem;
+    border: 0.1rem solid #e2e2e2;
+    cursor: pointer;
+    background-color: #fff;
+}
+    
+.hide{overflow:hidden;position:absolute;left:-9999px;width:0 !important;height:0 !important;font-size:0 !important;line-height:0 !important;margin:0 !important;padding:0 !important}
+
+.tc {
+	text-align: center;
+}
+.tl {
+	text-align: left;
+}
+.tr {
+	text-align: right;
+}
+
+th.sortable {
+  cursor: pointer;
+}
+th.asc::after {
+  content: " ▲";
+}
+th.desc::after {
+  content: " ▼";
+}
